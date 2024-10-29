@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI Text Summarizer App</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <h1>Summarizer W (^_^)</h1>
+    <p>Too much to read? Our AI tool can help. It quickly turns long texts into short summaries. Great for busy professionals and students. Save time, get key points fast, and make better decisions. Try our smart summarizer today and boost your productivity.</p>
+    <p>Simply paste your text into the text area below and click the "Summarize" button.</p>
+    <div class="container">
+      <div class="text-box">
+        <textarea id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 5170 chars.Will soon increase the number of characters 😉)" maxlength="5170"></textarea>
+        <button id="submit-button" class="submit-button">
+          <span class="submit-button-text">Summarize</span>
+        </button>
+      </div>
+      <div class="text-box">
+        <textarea id="summary" name="summarized_text" placeholder="Summarized text will appear here" readonly></textarea>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
