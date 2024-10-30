@@ -137,6 +137,16 @@ textarea {
   border-radius: 50%;
   animation: button-loading-spinner 1s ease infinite;
 }
+.reference{
+  a{
+    color: #61afef;
+    text-decoration: none;
+    transition: all 0.2s;
+    &:hover{
+      color: #56b6c2;
+    }
+  }
+}
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
