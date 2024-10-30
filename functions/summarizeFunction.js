@@ -26,9 +26,9 @@ exports.handler = async (event) => {
     return {
       statusCode: 200,
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'text/plain', // Changed to text/plain
       },
-      body: JSON.stringify({ summary })
+      body: summary // Directly return the summary text
     };
   } catch (error) {
     console.error('Error:', error);
