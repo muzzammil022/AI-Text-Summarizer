@@ -18,19 +18,19 @@ function verifyTextLength(e) {
   const textarea = e.target;
   const charCount = textarea.value.length;
   // Update counter display
-  counterDisplay.innerHTML = `Characters: ${charCount}/5170`;
+  counterDisplay.innerHTML = `Characters: ${charCount}/4230`;
   
   // Add color indication for character count
-  if (charCount > 5170) {
+  if (charCount > 4230) {
     counterDisplay.style.color = "red";
-  } else if (charCount > 4500) {
+  } else if (charCount > 3570) {
     counterDisplay.style.color = "orange";
   } else {
     counterDisplay.style.color = "white";
   }
   
   // Check if the text length is within bounds
-  if (charCount > 200 && charCount <= 5170) {
+  if (charCount > 200 && charCount <= 4230) {
     submitButton.disabled = false;
   } else {
     submitButton.disabled = true;
